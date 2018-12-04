@@ -6,10 +6,10 @@ public class Test {
 		for (int i = 0; i < 10; i++){
 			arr.add (new Par(i, i*2));
 		}
-		System.out.println ("Arreglo antes de despl: ");
+		System.out.println ("Arreglo antes de reflejar: ");
 		imprimirArreglo (arr);
-		System.out.println ("Arreglo despues de desplazar 3: ");
-		arr = new Desplazamiento (arr).desplazar(3);
+		System.out.println ("Arreglo despues de reflejar: ");
+		arr = new Reflejo (arr).reflejar();
 		imprimirArreglo (arr);
 
 	}
