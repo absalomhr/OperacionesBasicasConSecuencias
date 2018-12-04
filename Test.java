@@ -6,11 +6,12 @@ public class Test {
 		for (int i = 0; i < 10; i++){
 			arr.add (new Par(i, i*2));
 		}
-		System.out.println ("Arreglo antes de ampli: ");
+		System.out.println ("Arreglo antes de despl: ");
 		imprimirArreglo (arr);
-		System.out.println ("Arreglo despues de ampli * 0.5: ");
-		arr = new Amplificador (arr).amplificarAtenuar (0.5);
+		System.out.println ("Arreglo despues de desplazar 3: ");
+		arr = new Desplazador (arr).desplazar(3);
 		imprimirArreglo (arr);
+
 	}
 
 	public static void imprimirArreglo (ArrayList <Par> arr){
