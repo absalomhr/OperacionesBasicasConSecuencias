@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 
-public class Amplificador {
+public class Amplificar {
 	ArrayList <Par> arr;
 	public Amplificador (ArrayList <Par> arr) {
 		this.arr = arr;

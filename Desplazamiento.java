@@ -1,8 +1,8 @@
 import java.util.ArrayList;
 
-public class Desplazador {
+public class Desplazamiento {
 	ArrayList <Par> arr;
-	public Desplazador	(ArrayList <Par> arr){
+	public Desplazamiento	(ArrayList <Par> arr){
 		this.arr = arr;
 	}
 

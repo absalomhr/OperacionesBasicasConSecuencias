@@ -9,7 +9,7 @@ public class Test {
 		System.out.println ("Arreglo antes de despl: ");
 		imprimirArreglo (arr);
 		System.out.println ("Arreglo despues de desplazar 3: ");
-		arr = new Desplazador (arr).desplazar(3);
+		arr = new Desplazamiento (arr).desplazar(3);
 		imprimirArreglo (arr);
 
 	}
