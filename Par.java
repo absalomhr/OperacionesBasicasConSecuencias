@@ -2,7 +2,7 @@ public class Par {
 	int pos; // posicion
 	double valor; // magnitud
 
-	public Par (int pos, int valor){
+	public Par (int pos, double valor){
 		this.pos = pos;
 		this.valor = valor;
 	}

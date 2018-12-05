@@ -2,21 +2,32 @@ import java.util.ArrayList;
 
 public class Test {
 	public static void main(String[] args) {
-		ArrayList <Par> arr = new ArrayList <Par> ();
+		OperacionesSecuencia op = new OperacionesSecuencia ();
+		ArrayList <Par> arrA = new ArrayList <Par> ();
+		ArrayList <Par> arrB = new ArrayList <Par> ();
+		ArrayList <Par> arrC = new ArrayList <Par> ();
 		for (int i = 0; i < 10; i++){
-			arr.add (new Par(i, i*2));
+			arrA.add (new Par(i + 4, i));
+			arrB.add (new Par(i, i));
 		}
-		System.out.println ("Arreglo antes de reflejar: ");
-		imprimirArreglo (arr);
-		System.out.println ("Arreglo despues de reflejar: ");
-		arr = new Reflejo (arr).reflejar();
-		imprimirArreglo (arr);
+		Aritmetica a = new Aritmetica();
+		System.out.println ("Arreglo A");
+		op.imprimirArreglo (arrA);
+		System.out.println ("Arreglo B");
+		op.imprimirArreglo (arrB);
+		System.out.println ("Arreglo suma");
+		arrC = a.suma (arrA, arrB);
+		op.ordenarPorPosicion (arrC);
+		op.imprimirArreglo (arrC);
 
-	}
+		System.out.println ("Arreglo resta");
+		arrC = a.resta (arrA, arrB);
+		op.ordenarPorPosicion (arrC);
+		op.imprimirArreglo (arrC);
 
-	public static void imprimirArreglo (ArrayList <Par> arr){
-		for (int i = 0; i < arr.size(); i++){
-			System.out.println ("Posicion: " + arr.get (i).getPos() + " " + "Valor: " + arr.get (i).getValor());
-		}
+		System.out.println ("Arreglo multiplicacion");
+		arrC = a.multiplicacion (arrA, arrB);
+		op.ordenarPorPosicion (arrC);
+		op.imprimirArreglo (arrC);
 	}
 }
