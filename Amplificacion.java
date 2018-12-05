@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 public class Amplificacion {
-	ArrayList <Par> arr;
+	public ArrayList <Par> arr;
 	public Amplificacion (ArrayList <Par> arr) {
 		this.arr = arr;
 	};
