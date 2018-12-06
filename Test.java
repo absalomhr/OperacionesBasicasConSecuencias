@@ -10,17 +10,17 @@ public class Test {
 		/*for (int i = 0; i < 10; i++){
 			arrA.add (new Par(i, i));
 		}*/
-		arrA.add (new Par (-2, 2));
-		arrA.add (new Par (-1, 0));
-		arrA.add (new Par (0, 3));
-		arrA.add (new Par (1, 0.50));
-		arrA.add (new Par (2, 4));
-		arrA.add (new Par (3, 7));
+		arrA.add (new Par (-3, 1));
+		arrA.add (new Par (-2, 4));
+		arrA.add (new Par (-1, 7));
+		arrA.add (new Par (0, 10));
+		arrA.add (new Par (1, 4));
+		arrA.add (new Par (2, 1));
 		Interpolacion i = new Interpolacion ();
 		System.out.println ("Arreglo antes de interpolar a 0:");
 		op.imprimirArreglo (arrA);
 		System.out.println ("Arreglo despues de interpolar a 0:");
-		arrA = i.interpolacionEscalon(arrA, 2);
+		arrA = i.interpolacionLineal(arrA, 3);
 		op.imprimirArreglo (arrA);
 		/*
 		System.out.println ("Arreglo antes de diezmar 3:");
