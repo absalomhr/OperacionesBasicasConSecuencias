@@ -10,18 +10,21 @@ public class Test {
 		/*for (int i = 0; i < 10; i++){
 			arrA.add (new Par(i, i));
 		}*/
-		arrA.add (new Par (-3, 1));
-		arrA.add (new Par (-2, 4));
-		arrA.add (new Par (-1, 7));
-		arrA.add (new Par (0, 10));
-		arrA.add (new Par (1, 4));
-		arrA.add (new Par (2, 1));
-		Interpolacion i = new Interpolacion ();
-		System.out.println ("Arreglo antes de interpolar a 0:");
-		op.imprimirArreglo (arrA);
-		System.out.println ("Arreglo despues de interpolar a 0:");
-		arrA = i.interpolacionLineal(arrA, 3);
-		op.imprimirArreglo (arrA);
+		arrA.add (new Par (-2, -10));
+		arrA.add (new Par (-1, 4));
+		arrA.add (new Par (0, 0.25));
+		arrA.add (new Par (1, -1));
+		arrA.add (new Par (2, 0));
+		arrA.add (new Par (3, 2));
+
+		arrB.add (new Par (-3, 3));
+		arrB.add (new Par (-2, -7));
+		arrB.add (new Par (-1, 11));
+		arrB.add (new Par (0, 9));
+		arrB.add (new Par (1, -5));
+		
+		Convolucion a = new Convolucion ();
+		op.imprimirArreglo (a.convolucionar(arrB, arrA));
 		/*
 		System.out.println ("Arreglo antes de diezmar 3:");
 		op.imprimirArreglo (arrA);
